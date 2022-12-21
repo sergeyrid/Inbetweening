@@ -1,0 +1,4 @@
+12c12
+< from pymo.data import Joint, MocapData
+---
+> from PyMO.pymo.data import Joint, MocapData

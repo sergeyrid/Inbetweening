@@ -1,0 +1,14 @@
+26a27,29
+> import os
+> os.environ["PYOPENGL_PLATFORM"] = "egl"
+> 
+1652,1653c1655
+< def main():
+<     args = parse_args()
+---
+> def main(args):
+1922c1924,1925
+<     main()
+---
+>     args = parse_args()
+>     main(args)

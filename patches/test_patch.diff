@@ -1,0 +1,8 @@
+11c11
+< from pymo.parsers import BVHParser
+---
+> from PyMO.pymo.parsers import BVHParser
+48c48,49
+<     lafan_dataset_test = LAFAN1Dataset(lafan_path=config['data']['data_dir'], processed_data_dir=config['test']['processed_data_dir'], train=False, device=device, window=window, training_frames=training_frames)
+---
+>     lafan_dataset_test = LAFAN1Dataset(lafan_path=config['data']['data_dir'], processed_data_dir=config['test']['processed_data_dir'], train=False, device=device, window=window)

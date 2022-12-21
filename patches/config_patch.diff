@@ -1,0 +1,39 @@
+2c2
+<     data_dir: 'ubisoft-laforge-animation-dataset/output/BVH'
+---
+>     data_dir: 'my_input'
+5c5
+<     processed_data_dir: 'processed_data'
+---
+>     processed_data_dir: 'my_processed_data'
+14,15c14,15
+<     batch_size: 32
+<     epochs: 500
+---
+>     batch_size: 200
+>     epochs: 1
+29c29
+<     window: 51 # +11
+---
+>     window: 1 # +11
+32c32
+<     weight_save_interval: 25
+---
+>     weight_save_interval: 1
+35,37c35,37
+<     data_dir: 'ubisoft-laforge-animation-dataset/output/BVH'
+<     saved_weight_path: ''
+<     processed_data_dir: 'processed_data'
+---
+>     data_dir: 'my_input'
+>     saved_weight_path: 'model_weights/LAFAN/trained_weight_10'
+>     processed_data_dir: 'my_processed_data'
+39,41c39,41
+<     test_window: 50
+<     plot: false
+<     inference_batch_index: 25
+---
+>     test_window: 1
+>     plot: true
+>     inference_batch_index: 0
+\ No newline at end of file

@@ -1,0 +1,15 @@
+4,10d3
+< set -euo pipefail
+< 
+< venv_dir=venv
+< python -m venv --clear "${venv_dir}"
+< 
+< . "${venv_dir}"/bin/activate
+< 
+13,14d5
+< extra="cpu"
+< [ -x "$(command -v nvcc)" ] && extra="cu113"
+24c15
+<     patch -p0 < <(sed "s/python3.10/python${v}/" "${p}")
+---
+>     patch -d/ -p0 < <(sed "s/python3.10/python${v}/" "${p}")

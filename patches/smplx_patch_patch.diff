@@ -1,0 +1,12 @@
+1c1
+< +++ venv/lib/python3.10/site-packages/smplx/body_models.py
+---
+> +++ /usr/local/envs/env10/lib/python3.10/site-packages/smplx/body_models.py
+31c31
+< +++ venv/lib/python3.10/site-packages/smplx/lbs.py
+---
+> +++ /usr/local/envs/evn10/lib/python3.10/site-packages/smplx/lbs.py
+41c41
+< +++ venv/lib/python3.10/site-packages/smplx/utils.py
+---
+> +++ /usr/local/envs/env10/lib/python3.10/site-packages/smplx/utils.py

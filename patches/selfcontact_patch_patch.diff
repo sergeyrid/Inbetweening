@@ -1,0 +1,12 @@
+1c1
+< +++ venv/lib/python3.10/site-packages/selfcontact/body_segmentation.py
+---
+> +++ /usr/local/envs/env10/lib/python3.10/site-packages/selfcontact/body_segmentation.py
+59c59
+< +++ venv/lib/python3.10/site-packages/selfcontact/selfcontact.py
+---
+> +++ /usr/local/envs/env10/lib/python3.10/site-packages/selfcontact/selfcontact.py
+142c142
+< +++ venv/lib/python3.10/site-packages/selfcontact/utils/mesh.py
+---
+> +++ /usr/local/envs/env10/lib/python3.10/site-packages/selfcontact/utils/mesh.py
