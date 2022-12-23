@@ -55,6 +55,9 @@ v=$(python -c 'import sys; v = sys.version_info; print(f"{v.major}.{v.minor}")')
 for p in patches/*.diff; do
     patch -d/ -p0 < <(sed "s/python3.10/python${v}/" "${p}")
 done
+
+mv ../generate_poses.py ./src/
+
 conda deactivate
 ```
 
