@@ -1,9 +1,10 @@
-# import pose
+import pose
+import fist_pose
+import argparse
 import os
 
 
-class Args():
-    pass
+MODELS_DIR = "models"
 
 
 def parse_args():
@@ -12,7 +13,7 @@ def parse_args():
     parser.add_argument(
         "--input-path",
         type=str,
-        default="./input",
+        default="../input",
         help="Path to the input directory"
     )
 
@@ -93,14 +94,12 @@ def parse_args():
     parser.add_argument(
         "--save-path",
         type=str,
-        required=True,
         help="Path to save the results",
     )
 
     parser.add_argument(
         "--img-path",
         type=str,
-        required=True,
         help="Path to img to test",
     )
 
@@ -181,19 +180,24 @@ def parse_args():
         choices=list(fist_pose.INT_TO_FIST),
     )
 
-    args = parser.parse_args(namespace=Args)
+    args = parser.parse_args()
 
     return args
 
 
 def main(args):
     path = args.input_path
-    print(args.input_path)
-    # for dirname in os.listdir(path):
-    #     if not os.path.isdir(dirname):
-    #         continue
-    #     args.save-path = os.path.join(path, dirname)
-    #     pose.main(['--save-path', 'input/my_new_output'])
+    args.use_contacts = True
+    args.use_natural = True
+    args.use_cos = True
+    args.use_angle_transf = True
+    for dirname in os.listdir(path):
+        if not os.path.isdir(os.path.join(path, dirname)):
+            continue
+        print(f'Processing {dirname}')
+        args.img_path = os.path.join(path, dirname)
+        args.save_path = os.path.join(path, dirname, 'pose_output')
+        pose.main(args)
 
 
 if __name__ == '__main__':
