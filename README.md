@@ -170,6 +170,21 @@ conda deactivate
     doi     = {10.1145/3528223.3530106},
 }
 ```
+
+```
+@article{KIM2022108894,
+    title = {Conditional Motion In-betweening},
+    journal = {Pattern Recognition},
+    pages = {108894},
+    year = {2022},
+    issn = {0031-3203},
+    doi = {https://doi.org/10.1016/j.patcog.2022.108894},
+    url = {https://www.sciencedirect.com/science/article/pii/S0031320322003752},
+    author = {Jihoon Kim and Taehyun Byun and Seungyoun Shin and Jungdam Won and Sungjoon Choi},
+    keywords = {motion in-betweening, conditional motion generation, generative model, motion data augmentation}
+}
+```
+
 ```
 @article{harvey2020robust,
     author    = {Félix G. Harvey and Mike Yurick and Derek Nowrouzezahrai and Christopher Pal},
